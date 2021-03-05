@@ -5,15 +5,16 @@ Add Homebrew's shell environment to <a href="https://xon.sh">xonsh shell</a> on 
 </p>
 
 <p align="center">  
-If you like the idea, ask Homebrew to implement it natively as my <a href="https://github.com/Homebrew/brew/pull/10757">fix</a> was rejected because “xonsh is far too niche”
+If you like the idea click ⭐ on the repo to <a href="https://github.com/Homebrew/brew/pull/10757#issuecomment-791381047">accelerate the adding xonsh support to Brew</a>.
 </p>
+
 
 ## Introduction
 
 Homebrew has a `shellenv` command to add __Homebrew__ environment to your shell: it adds a few
-environment variables (`HOMEBREW_` `PREFIX`/`CELLAR`/`REPOSITORY`) and updates a few paths (`MAN`/`INFO`/ `PATH`). Unfortunately it doesn't support __xonsh__ shell, and the devs are not yet willing to [fix it](https://github.com/Homebrew/brew/pull/10757), requiring adding the environment variables manually...
+environment variables (`HOMEBREW_` `PREFIX`/`CELLAR`/`REPOSITORY`) and updates a few paths (`MAN`/`INFO`/ `PATH`).
 
-Or using this xontrib, which automatically translates the default __bash__ output of `shellenv` into __xonsh__
+This xontrib automatically translates the default __bash__ output of `shellenv` into __xonsh__.
 
 ## Installation
 
@@ -44,4 +45,4 @@ Set level of verbosity via `$XONTRIB_LINUXBREW_LOGLEVEL` to __0–3__:
 
 ## Credits
 
-This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
+- This package was created with [xontrib cookiecutter template](https://github.com/xonsh/xontrib-cookiecutter).
