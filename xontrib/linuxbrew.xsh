@@ -68,8 +68,8 @@ def _SetBrewEnv():
         cmdSplit = cmd.split('=',1)                    	# split 'PATH="path1:path2"'
         cmdVar = cmdSplit[0]                           	# 'PATH'
         cmdVal = cmdSplit[1].replace('"','').split(':')	# split "path1:path2"
-        for path in reversed(cmdVal):
-          ${cmdVar}.add(path, front=True, replace=True) # env lookup 'PATH' and add each path
+        for pathi in reversed(cmdVal):
+          ${cmdVar}.add(pathi, front=True, replace=True) # env lookup 'PATH' and add each path
   if len(matches) != 6:
     if _log >= 2:
       print("xontrib-LinuxBrew: WARNING: expected to successfully parse 6 variables from shellenv output, but only managed to parse " + str(len(matches)))
